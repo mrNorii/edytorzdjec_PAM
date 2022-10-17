@@ -63,6 +63,10 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:id="@+id/scaleSeek"
+            android:max="100"
+            android:min="1"
+            android:
+            android:progress="0"
             />
 
         <TextView
@@ -81,6 +85,7 @@
             android:layout_margin="10dp"
             android:id="@+id/transitionSeek"
             android:max="255"
+            android:progress="255"
             />
 
         <TextView
@@ -115,7 +120,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:id="@+id/rSeek"
-            android:max="100"
+            android:max="255"
 
             />
         <SeekBar
@@ -123,7 +128,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:id="@+id/gSeek"
-            android:max="100"
+            android:max="255"
 
             />
         <SeekBar
@@ -131,7 +136,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:id="@+id/bSeek"
-            android:max="100"
+            android:max="255"
 
             />
 

@@ -2,14 +2,20 @@ package com.example.edytorzdjec;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.graphics.Color;
+import android.graphics.ColorFilter;
+import android.graphics.PorterDuff;
 import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.SeekBar;
+
+import java.net.ContentHandler;
 
 public class MainActivity extends AppCompatActivity {
 
     SeekBar seekS, seekT, seekRot, seekR, seekG, seekB;
     ImageView image;
+    int r,g,bl;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,7 +34,8 @@ public class MainActivity extends AppCompatActivity {
         seekS.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
-                //image.getLayoutParams().height;
+                image.setScaleX(i);
+                image.setScaleY(i);
             }
 
             @Override
@@ -76,5 +83,66 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+        //Kolor
+        //R
+        seekR.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+            @Override
+            public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
+                r = i;
+                kolor();
+            }
+
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {
+
+            }
+
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {
+
+            }
+        });
+        //G
+        seekG.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+            @Override
+            public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
+                g = i;
+                kolor();
+            }
+
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {
+
+            }
+
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {
+
+            }
+        });
+        //B
+        seekB.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+            @Override
+            public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
+                bl = i;
+                kolor();
+            }
+
+
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {
+
+            }
+
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {
+
+            }
+        });
     }
+
+    public void kolor() {
+        image.setColorFilter(Color.rgb(r,g,bl), PorterDuff.Mode.MULTIPLY);
+    }
+
 }
