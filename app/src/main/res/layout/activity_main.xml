@@ -29,6 +29,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:src="@drawable/geyser"
+            android:id="@+id/obraz"
             />
 
     </LinearLayout>
@@ -52,34 +53,87 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Skalowanie:"
-            android:textSize="20sp"
+            android:textSize="15sp"
             android:gravity="start"
             android:layout_marginLeft="20sp"
-            android:layout_marginTop="20sp"
             android:fontFamily="sans-serif-black"
             android:textColor="@color/white"/>
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:id="@+id/scaleSeek"
+            />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Przezroczystość:"
-            android:textSize="20sp"
+            android:textSize="15sp"
             android:gravity="start"
             android:layout_marginLeft="20sp"
-            android:layout_marginTop="20sp"
             android:fontFamily="sans-serif-black"
             android:textColor="@color/white"/>
+
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:id="@+id/transitionSeek"
+            android:max="100"
+
+            />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Rotacja:"
-            android:textSize="20sp"
+            android:textSize="15sp"
             android:gravity="start"
             android:layout_marginLeft="20sp"
-            android:layout_marginTop="20sp"
             android:fontFamily="sans-serif-black"
             android:textColor="@color/white"/>
+
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:id="@+id/rotationSeek"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kolor:"
+            android:textSize="15sp"
+            android:gravity="start"
+            android:layout_marginLeft="20sp"
+            android:fontFamily="sans-serif-black"
+            android:textColor="@color/white"/>
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:id="@+id/rSeek"
+            android:max="100"
+
+            />
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:id="@+id/gSeek"
+            android:max="100"
+
+            />
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:id="@+id/bSeek"
+            android:max="100"
+
+            />
 
     </LinearLayout>
 
