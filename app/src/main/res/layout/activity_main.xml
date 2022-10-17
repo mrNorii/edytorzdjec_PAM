@@ -12,7 +12,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_weight="5"
         android:orientation="vertical"
         android:layout_margin="10sp">
 
@@ -37,7 +37,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_weight="7"
         android:orientation="vertical">
 
         <TextView
@@ -80,8 +80,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:id="@+id/transitionSeek"
-            android:max="100"
-
+            android:max="255"
             />
 
         <TextView
@@ -99,6 +98,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:id="@+id/rotationSeek"
+            android:max="360"
             />
 
         <TextView

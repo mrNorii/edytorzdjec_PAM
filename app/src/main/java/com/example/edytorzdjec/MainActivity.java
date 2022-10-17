@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
         seekS.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
-                //image.getLayoutParams().height ;
+                //image.getLayoutParams().height;
             }
 
             @Override
@@ -47,6 +47,23 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
                 image.setImageAlpha(i);
+            }
+
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {
+
+            }
+
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {
+
+            }
+        });
+        //Rotacja
+        seekRot.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+            @Override
+            public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
+                image.setRotation(i);
             }
 
             @Override
