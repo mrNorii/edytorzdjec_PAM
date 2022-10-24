@@ -9,6 +9,15 @@
     android:background="#444444"
     >
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kamil Sabiron"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:fontFamily="sans-serif-black"
+        android:textColor="@color/white"/>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -16,20 +25,12 @@
         android:orientation="vertical"
         android:layout_margin="10sp">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Kamil Sabiron"
-            android:textSize="20sp"
-            android:layout_gravity="center"
-            android:fontFamily="sans-serif-black"
-            android:textColor="@color/white"/>
-
         <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
             android:src="@drawable/geyser"
             android:id="@+id/obraz"
+            android:layout_gravity="center"
             />
 
     </LinearLayout>
@@ -61,7 +62,7 @@
         <SeekBar
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
+            android:layout_margin="8dp"
             android:id="@+id/scaleSeek"
             android:max="10"
             android:min="1"
@@ -81,7 +82,7 @@
         <SeekBar
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
+            android:layout_margin="8dp"
             android:id="@+id/transitionSeek"
             android:max="255"
             android:progress="255"
@@ -100,7 +101,7 @@
         <SeekBar
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
+            android:layout_margin="8dp"
             android:id="@+id/rotationSeek"
             android:max="360"
             />
@@ -120,6 +121,7 @@
             android:layout_margin="10dp"
             android:id="@+id/rSeek"
             android:max="255"
+            android:progress="255"
 
             />
         <SeekBar
@@ -128,7 +130,7 @@
             android:layout_margin="10dp"
             android:id="@+id/gSeek"
             android:max="255"
-
+            android:progress="255"
             />
         <SeekBar
             android:layout_width="match_parent"
@@ -136,7 +138,7 @@
             android:layout_margin="10dp"
             android:id="@+id/bSeek"
             android:max="255"
-
+            android:progress="255"
             />
 
     </LinearLayout>
